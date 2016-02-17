@@ -1,0 +1,591 @@
+! Compile xft: Attempt to find a visual with the given bit depth; option -depth.
+! URxvt*depth: bitdepth
+
+! Compile xft: Turn on/off double-buffering for xft (default enabled).  On some card/driver
+! URxvt*buffered: boolean
+
+! Create the window with the specified X window geometry [default 80x24]; option -geometry.
+! URxvt*geometry: geom
+
+! Use the specified colour as the windows background colour [default White]; option -bg.
+! URxvt.background: 8
+
+! Use the specified colour as the windows foreground colour [default Black]; option -fg.
+! URxvt.foreground: white
+
+! Use the specified colour for the colour value n, where 0-7 corresponds to low-intensity
+! URxvt*colorn: colour
+! Other colors
+! URxvt.color0: black
+! URxvt.color1: red3
+! URxvt.color2: green3
+! URxvt.color3: yellow3
+! URxvt.color4: blue2
+! URxvt.color5: magenta3
+! URxvt.color6: cyan2
+! URxvt.color7: gray90
+! URxvt.color8: grey50
+! URxvt.color9: red
+! URxvt.color10: green
+! URxvt.color11: yellow
+! URxvt.color12: blue
+! URxvt.color13: magenta
+! URxvt.color14: cyan
+! URxvt.color15: white
+
+! 
+! URxvt*colorBD: colour
+
+! Use the specified colour to display bold or italic characters when the foreground colour is
+! URxvt*colorIT: colour
+
+! Use the specified colour to display underlined characters when the foreground colour is the
+! URxvt*colorUL: colour
+
+! If set, use the specified colour as the colour for the underline itself. If unset, use the
+! URxvt*underlineColor: colour
+
+! If set, use the specified colour as the background for highlighted characters. If unset,
+! URxvt*highlightColor: colour
+
+! If set and highlightColor is set, use the specified colour as the foreground for
+! URxvt*highlightTextColor: colour
+
+! Use the specified colour for the cursor. The default is to use the foreground colour;
+! URxvt*cursorColor: colour
+
+! Use the specified colour for the colour of the cursor text. For this to take effect,
+! URxvt*cursorColor2: colour
+
+! True: simulate reverse video by foreground and background colours; option -rv. False:
+! URxvt*reverseVideo: boolean
+
+! True: specify that jump scrolling should be used. When receiving lots of lines, urxvt will
+! URxvt*jumpScroll: boolean
+
+! True: (the default) specify that skip scrolling should be used. When receiving lots of
+! URxvt*skipScroll: boolean
+
+! Fade the text by the given percentage when focus is lost; option -fade.
+! URxvt*fading: number
+
+! Fade to this colour, when fading is used (see fading:). The default colour is black; option
+! URxvt.fadeColor: white
+
+! Set the application icon pixmap; option -icon.
+! URxvt.iconFile: /home/grant/Desktop/Terminal-icon.px
+
+! Use the specified colour for the scrollbar [default #B2B2B2].
+! URxvt*scrollColor: colour
+
+! Use the specified colour for the scrollbars trough area [default #969696]. Only relevant
+! URxvt*troughColor: colour
+
+! The colour of the border around the text area and between the scrollbar and the text.
+URxvt.borderColor: #3D5C5C
+
+! Select the fonts to be used. This is a comma separated list of font names that are checked
+URxvt.font: xft:Inconsolata:pixelsize=18:
+
+! URxvt*boldFont: fontlist
+
+! 
+! URxvt*italicFont: fontlist
+
+! The font list to use for displaying bold, italic or bold italic characters, respectively.
+! URxvt*boldItalicFont: fontlist
+
+! When font styles are not enabled, or this option is enabled (True, option -is, the
+! URxvt*intensityStyles: boolean
+
+! Set window title string, the default title is the command-line specified after the -e
+! URxvt.title: "BITCHES"
+
+! Set the name used to label the windows icon or displayed in an icon manager window, it
+! URxvt.iconName: "MONEY"
+
+! True: de-iconify (map) on receipt of a bell character. False: no de-iconify (map) on
+! URxvt*mapAlert: boolean
+
+! True: set the urgency hint for the wm on receipt of a bell character.  False: do not set
+URxvt.urgentOnBell: true
+
+! True: use visual bell on receipt of a bell character; option -vb.  False: no visual bell
+! URxvt*visualBell: boolean
+
+! True: start as a login shell by prepending a - to argv[0] of the shell; option -ls.
+! URxvt*loginShell: boolean
+
+! Specify the maximum time in milliseconds between multi-click select events. The default is
+! URxvt*multiClickTime: number
+
+! True: inhibit writing record into the system log file utmp; option -ut. False: write record
+! URxvt*utmpInhibit: boolean
+
+! Specify a command pipe for vt100 printer [default lpr(1)]. Use Print to initiate a screen
+! URxvt*print-pipe: string
+
+! Set scrollbar style to rxvt, plain, next or xterm. plain is the authors favourite.
+! URxvt.scrollstyle: plain
+
+! Set the scrollbar width in pixels.
+! URxvt*thickness: number
+
+! True: enable the scrollbar [default]; option -sb. False: disable the scrollbar; option +sb.
+URxvt.scrollBar: false
+
+! True: place the scrollbar on the right of the window; option -sr.  False: place the
+! URxvt*scrollBar_right: boolean
+
+! True: display an rxvt scrollbar without a trough; option -st.  False: display an rxvt
+! URxvt*scrollBar_floating: boolean
+
+! Align the top, bottom or centre [default] of the scrollbar thumb with the pointer on middle
+! URxvt*scrollBar_align: mode
+
+! True: scroll to bottom when tty receives output; option -si.  False: do not scroll to
+URxvt.scrollTtyOutput: true
+
+! True: scroll with scrollback buffer when tty receives new lines (i.e.  try to show the same
+URxvt.scrollWithBuffer: true
+
+! True: scroll to bottom when a non-special key is pressed. Special keys are those which are
+URxvt*scrollTtyKeypress: true
+
+! Save number lines in the scrollback buffer [default 64]. This resource is limited on most
+! URxvt*saveLines: number
+
+! Internal border of number pixels. This resource is limited to 100; option -b.
+URxvt.internalBorder: 3
+
+! External border of number pixels. This resource is limited to 100; option -w, -bw,
+URxvt.externalBorder: 0
+
+! Set MWM hints to request a borderless window, i.e. if honoured by the WM, the rxvt-unicode
+! URxvt.borderLess: true
+
+! Compile frills: Disable the usage of the built-in block graphics/line drawing characters
+URxvt.skipBuiltinGlyphs: false
+
+! Specifies the terminal type name to be set in the TERM environment variable; option -tn.
+URxvt.termName: rxvt-unicode
+
+! Specifies number of lines (pixel height) to insert between each row of the display [default
+! URxvt*lineSpace: number
+
+! True: handle Meta (Alt) + keypress to set the 8th bit. False: handle Meta (Alt) + keypress
+! URxvt*meta8: boolean
+
+! True: the mouse wheel scrolls a page full. False: the mouse wheel scrolls five lines
+! URxvt*mouseWheelScrollPage: boolean
+
+! True: store tabs as wide characters. False: interpret tabs as cursor movement only; option
+! URxvt*pastableTabs: boolean
+
+! True: blink the cursor. False: do not blink the cursor [default]; option -bc.
+! URxvt*cursorBlink: boolean
+
+! True: Make the cursor underlined. False: Make the cursor a box [default]; option -uc.
+! URxvt*cursorUnderline: boolean
+
+! True: blank the pointer when a key is pressed or after a set number of seconds of
+URxvt.pointerBlank: true
+
+! Mouse pointer foreground colour.
+! URxvt.pointerColor: green
+
+! Mouse pointer background colour.
+! URxvt*pointerColor2: colour
+
+! Specifies number of seconds before blanking the pointer [default 2]. Use a large number
+URxvt.pointerBlankDelay: 1
+
+! The string to send when the backspace key is pressed. If set to DEC or unset it will send
+! URxvt*backspacekey: string
+
+! The string to send when the delete key (not the keypad delete key) is pressed. If unset it
+! URxvt*deletekey: string
+
+! The characters used as delimiters for double-click word selection (whitespace delimiting is
+! URxvt*cutchars: string
+
+! 
+! URxvt*{|}
+
+! OverTheSpot, OffTheSpot, Root; option -pt.
+! URxvt*preeditType: style
+
+! name of inputMethod to use; option -im.
+! URxvt*inputMethod: name
+
+! The locale to use for opening the IM. You can use an "LC_CTYPE" of e.g.  "de_DE.UTF-8" for
+! URxvt*imLocale: name
+
+! Specify the font-set used for XIM styles "OverTheSpot" or "OffTheSpot". It must be a
+! URxvt*imFont: fontset
+
+! Change the meaning of triple-click selection with the left mouse button. Instead of
+! URxvt*tripleclickwords: boolean
+
+! Enables "insecure" mode. Rxvt-unicode offers some escape sequences that echo arbitrary
+! URxvt*insecure: boolean
+
+! Set the key to be interpreted as the Meta key to: alt, meta, hyper, super, mod1, mod2,
+! URxvt*modifier: modifier
+
+! Specify the reply rxvt-unicode sends to the shell when an ENQ (control-E) character is
+! URxvt*answerbackString: string
+
+! Turn on/off secondary screen (default enabled).
+URxvt.secondaryScreen: 1
+
+! Turn on/off secondary screen scroll (default enabled). If this option is enabled, scrolls
+URxvt.secondaryScroll: 0
+
+! Turn on/off hold window after exit support. If enabled, urxvt will not immediately destroy
+URxvt.hold: false
+
+! Sets the working directory for the shell (or the command specified via -e). The path must
+! URxvt*chdir: path
+
+! Compile frills: Associate action with keysym sym. The intervening resource name keysym.
+! URxvt*keysym.sym: action
+
+! URxvt.perl-ext-common: ...,tabbed,...
+
+! URxvt.tabbed.tabbar-fg: 5
+! URxvt.tabbed.tabbar-bg: 0
+! URxvt.tabbed.tab-fg: 6
+! URxvt.tabbed.tab-bg: 0
+
+! Comma-separated list(s) of perl extension scripts (default: "default") to use in this
+! URxvt*perl-ext: string
+
+! Perl code to be evaluated when all extensions have been registered. See the urxvtperl(3)
+! URxvt*perl-eval: string
+
+! Colon-separated list of additional directories that hold extension scripts. When looking
+! URxvt*perl-lib: path
+
+! Additional selection patterns, see the urxvtperl(3) manpage for details.
+! URxvt*selection.pattern-idx: perl-regex
+
+! Selection auto-transform patterns, see the urxvtperl(3) manpage for details.
+! URxvt*selection-autotransform.idx: perl-transform
+
+! This resource is deprecated and will be removed. Use a keysym resource instead, e.g.:
+! URxvt*searchable-scrollback: keysym *DEPRECATED*
+
+! Specifies the program to be started with a URL argument. Used by the "selection-popup" and
+! URxvt*url-launcher: string
+
+! Compile frills: Sets the WM_TRANSIENT_FOR property to the given window id.
+! URxvt*transient-for: windowid
+
+! Compile frills: Sets override-redirect for the terminal window, making it almost invisible
+! URxvt*override-redirect: boolean
+
+! Turn on/off ISO 14755 (default enabled).
+! URxvt*iso14755: boolean
+
+! Turn on/off ISO 14755 5.2 mode (default enabled).
+! URxvt*iso14755_52: boolean
+
+! =================ADDITIONAL ADDITIVE CONFIGURATIONISMS================
+!	Made by user 'baskerville' from github page:
+! https://github.com/baskerville/xresources-color-schemes/blob/master/raven-dark
+
+
+#define t_bg_floor     #010000
+#define t_bg_dip       #2B2B28
+#define t_background   #3D5C5C
+#define t_bg_bump      #3F3E3B
+#define t_fg_comment   #7F7F83
+#define t_foreground   #A6A7AA
+#define t_fg_highlight #FF9A66
+#define t_fg_ceiling   #FEFFFF
+
+URxvt.background: t_background
+URxvt.foreground: t_foreground
+
+URxvt.colorBD: t_fg_highlight
+URxvt.colorIT: t_fg_highlight
+URxvt.colorUL: t_fg_highlight
+
+URxvt.cursorColor: #FF9A66
+
+! BLK
+URxvt.color0: t_bg_bump
+URxvt.color8: t_fg_comment
+
+! WHT
+URxvt.color7: t_fg_highlight
+URxvt.color15: t_fg_ceiling
+
+! RED
+URxvt.color1: #B36B65
+URxvt.color9: #FF9A66
+
+! YEL
+URxvt.color3: #8D7E45
+URxvt.color11: #C7B679
+
+! GRN
+URxvt.color2: #4F8C61
+URxvt.color10: #86C596
+
+! CYN
+URxvt.color6: #0E8E9A
+URxvt.color14: #5EC7D4
+
+! BLU
+URxvt.color4: #6181B8
+URxvt.color12: #9AB9F3
+
+! MAG
+URxvt.color5: #A46D9D
+URxvt.color13: #DFA4D7
+
+URxvt.color16: t_bg_floor
+URxvt.color17: t_bg_dip
+URxvt.color18: t_background
+URxvt.color19: t_bg_bump
+URxvt.color20: t_fg_comment
+URxvt.color21: t_foreground
+URxvt.color22: t_fg_highlight
+URxvt.color23: t_fg_ceiling
+
+URxvt.color24: #DE8FA8
+URxvt.color25: #DE8FA7
+URxvt.color26: #DF8FA5
+URxvt.color27: #DF8FA3
+URxvt.color28: #DF8FA2
+URxvt.color29: #DF8FA0
+URxvt.color30: #DF8F9F
+URxvt.color31: #E0909D
+URxvt.color32: #E0909B
+URxvt.color33: #E0909A
+URxvt.color34: #E09098
+URxvt.color35: #E09097
+URxvt.color36: #E09095
+URxvt.color37: #DF9194
+URxvt.color38: #DF9192
+URxvt.color39: #DF9191
+URxvt.color40: #DF918F
+URxvt.color41: #DE928E
+URxvt.color42: #DE928C
+URxvt.color43: #DE928B
+URxvt.color44: #DD9289
+URxvt.color45: #DD9388
+URxvt.color46: #DC9387
+URxvt.color47: #DC9485
+URxvt.color48: #DB9484
+URxvt.color49: #DB9483
+URxvt.color50: #DA9581
+URxvt.color51: #D99580
+URxvt.color52: #D9967F
+URxvt.color53: #D8967E
+URxvt.color54: #D7977D
+URxvt.color55: #D6977B
+URxvt.color56: #D5987A
+URxvt.color57: #D59879
+URxvt.color58: #D49978
+URxvt.color59: #D39977
+URxvt.color60: #D29A76
+URxvt.color61: #D19A75
+URxvt.color62: #D09B74
+URxvt.color63: #CF9B73
+URxvt.color64: #CE9C73
+URxvt.color65: #CD9C72
+URxvt.color66: #CB9D71
+URxvt.color67: #CA9D70
+URxvt.color68: #C99E6F
+URxvt.color69: #C89E6F
+URxvt.color70: #C79F6E
+URxvt.color71: #C59F6E
+URxvt.color72: #C4A06D
+URxvt.color73: #C3A16D
+URxvt.color74: #C1A16C
+URxvt.color75: #C0A26C
+URxvt.color76: #BFA26B
+URxvt.color77: #BDA36B
+URxvt.color78: #BCA36B
+URxvt.color79: #BAA46B
+URxvt.color80: #B9A46A
+URxvt.color81: #B8A56A
+URxvt.color82: #B6A56A
+URxvt.color83: #B5A66A
+URxvt.color84: #B3A66A
+URxvt.color85: #B1A76A
+URxvt.color86: #B0A86A
+URxvt.color87: #AEA86A
+URxvt.color88: #ADA96B
+URxvt.color89: #ABA96B
+URxvt.color90: #AAAA6B
+URxvt.color91: #A8AA6B
+URxvt.color92: #A6AA6C
+URxvt.color93: #A5AB6C
+URxvt.color94: #A3AB6D
+URxvt.color95: #A1AC6D
+URxvt.color96: #A0AC6E
+URxvt.color97: #9EAD6E
+URxvt.color98: #9CAD6F
+URxvt.color99: #9BAE70
+URxvt.color100: #99AE70
+URxvt.color101: #97AE71
+URxvt.color102: #96AF72
+URxvt.color103: #94AF73
+URxvt.color104: #92B074
+URxvt.color105: #90B075
+URxvt.color106: #8FB076
+URxvt.color107: #8DB176
+URxvt.color108: #8BB178
+URxvt.color109: #89B179
+URxvt.color110: #88B27A
+URxvt.color111: #86B27B
+URxvt.color112: #84B27C
+URxvt.color113: #82B37D
+URxvt.color114: #81B37E
+URxvt.color115: #7FB380
+URxvt.color116: #7DB381
+URxvt.color117: #7CB482
+URxvt.color118: #7AB484
+URxvt.color119: #78B485
+URxvt.color120: #76B486
+URxvt.color121: #75B588
+URxvt.color122: #73B589
+URxvt.color123: #71B58B
+URxvt.color124: #70B58C
+URxvt.color125: #6EB68E
+URxvt.color126: #6CB68F
+URxvt.color127: #6BB691
+URxvt.color128: #69B692
+URxvt.color129: #67B694
+URxvt.color130: #66B695
+URxvt.color131: #64B697
+URxvt.color132: #63B798
+URxvt.color133: #61B79A
+URxvt.color134: #60B79C
+URxvt.color135: #5EB79D
+URxvt.color136: #5DB79F
+URxvt.color137: #5BB7A0
+URxvt.color138: #5AB7A2
+URxvt.color139: #59B7A4
+URxvt.color140: #57B7A5
+URxvt.color141: #56B7A7
+URxvt.color142: #55B7A9
+URxvt.color143: #54B7AA
+URxvt.color144: #53B7AC
+URxvt.color145: #52B7AD
+URxvt.color146: #51B7AF
+URxvt.color147: #50B7B1
+URxvt.color148: #4FB7B2
+URxvt.color149: #4EB7B4
+URxvt.color150: #4EB7B5
+URxvt.color151: #4DB7B7
+URxvt.color152: #4DB7B8
+URxvt.color153: #4CB7BA
+URxvt.color154: #4CB7BC
+URxvt.color155: #4CB7BD
+URxvt.color156: #4CB6BF
+URxvt.color157: #4CB6C0
+URxvt.color158: #4CB6C1
+URxvt.color159: #4CB6C3
+URxvt.color160: #4CB6C4
+URxvt.color161: #4DB6C6
+URxvt.color162: #4DB5C7
+URxvt.color163: #4EB5C8
+URxvt.color164: #4EB5CA
+URxvt.color165: #4FB5CB
+URxvt.color166: #50B5CC
+URxvt.color167: #51B4CE
+URxvt.color168: #52B4CF
+URxvt.color169: #53B4D0
+URxvt.color170: #55B4D1
+URxvt.color171: #56B3D2
+URxvt.color172: #57B3D3
+URxvt.color173: #59B3D4
+URxvt.color174: #5AB2D5
+URxvt.color175: #5CB2D6
+URxvt.color176: #5DB2D7
+URxvt.color177: #5FB1D8
+URxvt.color178: #61B1D9
+URxvt.color179: #63B1DA
+URxvt.color180: #64B0DB
+URxvt.color181: #66B0DB
+URxvt.color182: #68B0DC
+URxvt.color183: #6AAFDD
+URxvt.color184: #6CAFDE
+URxvt.color185: #6EAEDE
+URxvt.color186: #70AEDF
+URxvt.color187: #72AEDF
+URxvt.color188: #74ADE0
+URxvt.color189: #76ADE0
+URxvt.color190: #79ACE1
+URxvt.color191: #7BACE1
+URxvt.color192: #7DABE1
+URxvt.color193: #7FABE1
+URxvt.color194: #81AAE2
+URxvt.color195: #83AAE2
+URxvt.color196: #85A9E2
+URxvt.color197: #87A9E2
+URxvt.color198: #8AA8E2
+URxvt.color199: #8CA8E2
+URxvt.color200: #8EA7E2
+URxvt.color201: #90A7E2
+URxvt.color202: #92A6E2
+URxvt.color203: #94A6E2
+URxvt.color204: #96A5E1
+URxvt.color205: #98A5E1
+URxvt.color206: #9BA4E1
+URxvt.color207: #9DA3E1
+URxvt.color208: #9FA3E0
+URxvt.color209: #A1A2E0
+URxvt.color210: #A3A2DF
+URxvt.color211: #A5A1DF
+URxvt.color212: #A7A1DE
+URxvt.color213: #A9A0DE
+URxvt.color214: #ABA0DD
+URxvt.color215: #AC9FDC
+URxvt.color216: #AE9EDC
+URxvt.color217: #B09EDB
+URxvt.color218: #B29DDA
+URxvt.color219: #B49DD9
+URxvt.color220: #B69CD8
+URxvt.color221: #B79CD8
+URxvt.color222: #B99BD7
+URxvt.color223: #BB9AD6
+URxvt.color224: #BC9AD5
+URxvt.color225: #BE99D4
+URxvt.color226: #C099D3
+URxvt.color227: #C198D1
+URxvt.color228: #C398D0
+URxvt.color229: #C497CF
+URxvt.color230: #C697CE
+URxvt.color231: #C796CD
+URxvt.color232: #C996CB
+URxvt.color233: #CA95CA
+URxvt.color234: #CB95C9
+URxvt.color235: #CD95C8
+URxvt.color236: #CE94C6
+URxvt.color237: #CF94C5
+URxvt.color238: #D093C3
+URxvt.color239: #D193C2
+URxvt.color240: #D293C1
+URxvt.color241: #D392BF
+URxvt.color242: #D492BE
+URxvt.color243: #D592BC
+URxvt.color244: #D691BB
+URxvt.color245: #D791B9
+URxvt.color246: #D891B8
+URxvt.color247: #D991B6
+URxvt.color248: #D990B5
+URxvt.color249: #DA90B3
+URxvt.color250: #DB90B2
+URxvt.color251: #DB90B0
+URxvt.color252: #DC90AE
+URxvt.color253: #DD90AD
+URxvt.color254: #DD90AB
+URxvt.color255: #DE8FAA
+
+! vim: set ft=xdefaults:
